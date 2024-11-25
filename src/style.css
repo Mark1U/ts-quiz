@@ -94,3 +94,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* answerbox styling */
+
+.answerBox{
+  border: 2px solid grey;
+  border-radius: 4px;
+  padding: 20px;
+  width: 100%;
+}
+.answerBox label{
+  border:  2px solid grey;
+  width: 100%;
+}
