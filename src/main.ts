@@ -5,8 +5,11 @@ import IQuestion from './interfaces/IQuestion';
 const home = document.querySelector('#home') as HTMLDivElement;
 const easyGermanBtn = document.querySelector('#easyGermanBtn') as HTMLButtonElement;
 const hardGermanBtn = document.querySelector('#hardGermanBtn') as HTMLButtonElement;
+const mixedGermanBtn = document.querySelector('#mixedGermanBtn')as HTMLButtonElement; //hinzugefügt
 const easyEnglishBtn = document.querySelector('#easyEnglishBtn') as HTMLButtonElement;
 const hardEnglishBtn = document.querySelector('#hardEnglishBtn') as HTMLButtonElement;
+const mixedEnglishBtn = document.querySelector('#mixedEnglishBtn') as HTMLButtonElement; //hinzugefügt
+
 
 //quiz view
 const quiz = document.querySelector('#quiz') as HTMLDivElement;
@@ -34,10 +37,11 @@ const returnHome = document.querySelector('#returnHome') as HTMLButtonElement;
 const gameList = [
   'https://vz-wd-24-01.github.io/typescript-quiz/questions/leicht.json',
   'https://vz-wd-24-01.github.io/typescript-quiz/questions/schwer.json',
+  'src/questions/qMixedGE.json',
   'https://vz-wd-24-01.github.io/typescript-quiz/questions/easy.json',
   'https://vz-wd-24-01.github.io/typescript-quiz/questions/hard.json',
-  'src/questions/q1.json',
-];
+  'src/questions/qMixedEN.json',
+]; // 2 hinzugefügt
 
 
 
@@ -120,8 +124,10 @@ const startGame = async (id: number) => {
 
 easyGermanBtn?.addEventListener('click', () => startGame(0));
 hardGermanBtn?.addEventListener('click', () => startGame(1));
-easyEnglishBtn?.addEventListener('click', () => startGame(2));
-hardEnglishBtn?.addEventListener('click', () => startGame(3));
+mixedGermanBtn?.addEventListener('click',()=> startGame(2)); //hinzugefügt, index geschoben
+easyEnglishBtn?.addEventListener('click', () => startGame(3));
+hardEnglishBtn?.addEventListener('click', () => startGame(4));
+mixedEnglishBtn?.addEventListener('click', () => startGame(5));//hinzugefügt
 
 
 submitAnswer.addEventListener('click', (e) => {
