@@ -1,55 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Quiz </title>
-  </head>
-  <body>
-    <div id="app">
-      
-      <div id="home">
-        <h1>The Quiz</h1>
-        <div class="selectionBox">
-          <button type="button" id="easyGermanBtn">Deutsch - leicht</button>
-          <button type="button" id="hardGermanBtn">Deutsch - schwer</button>
-          <button type="button" id="easyEnglishBtn">English - easy</button>
-          <button type="button" id="hardEnglishBtn">English - hard</button>
-        </div>
-      </div>
-      <div id="quiz">
-        <p id="progressCounter"></p>
-        <h2 id="question"></h2>
-        <form>
-        <div class="answerBox">
-          <label for="answerAbtn">
-          <input type="radio" name="choice" id="answerAbtn" value="0">
-          <div id="answerTextA"></div>
-        </label>
-        <label for="answerBbtn">
-          <input type="radio" name="choice" id="answerBbtn" value="1">
-          <div id="answerTextB"></div>
-        </label>
-        <label for="answerCbtn">
-          <input type="radio" name="choice" id="answerCbtn" value="2">
-          <div id="answerTextC"></div>
-        </label>
-        <label for="answerDbtn">
-          <input type="radio" name="choice" id="answerDbtn" value="3">
-          <div id="answerTextD"></div>
-        </label>
-        </div>
-        <button type="submit" id="submitAnswer">Submit</button>
-      </form>
-      </div>
-      <div id="leaderboard">
-       <h3 id="points"></h3>
-       <h2>Congratulations! You've completed the quiz!</h2> 
-        <button type="button" id="returnHome">Start new quiz</button>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Quiz </title>
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="home">
+      <h1>The Quiz</h1>
+      <div class="selectionBox">
+        <button class="gameSelBtn" type="button" id="easyGermanBtn">Deutsch - leicht</button>
+        <button class="gameSelBtn" type="button" id="hardGermanBtn">Deutsch - schwer</button>
+        <button class="gameSelBtn" type="button" id="easyEnglishBtn">English - easy</button>
+        <button class="gameSelBtn" type="button" id="hardEnglishBtn">English - hard</button>
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <div class="hidden" id="quiz">
+      <p id="progressCounter"></p>
+      <h2 id="question"></h2>
+      <form>
+        <div class="answerBox">
+
+          <label for="answerAbtn">
+            <input aria-label="Anwer A" type="radio" name="choice" id="answerAbtn" value="0" required>
+            <div id="answerTextA"></div>
+          </label>
+          <label for="answerBbtn">
+            <input aria-label="Anwer B" type="radio" name="choice" id="answerBbtn" value="1">
+            <div id="answerTextB"></div>
+          </label>
+          <label for="answerCbtn">
+            <input aria-label="Anwer C" type="radio" name="choice" id="answerCbtn" value="2">
+            <div id="answerTextC"></div>
+          </label>
+          <label for="answerDbtn">
+            <input aria-label="Anwer D" type="radio" name="choice" id="answerDbtn" value="3">
+            <div id="answerTextD"></div>
+          </label>
+
+        </div>
+        <button type="button" id="submitAnswer">Submit</button>
+      </form>
+    </div>
+    <div class="hidden" id="leaderBoard">
+      <h3 id="points"></h3>
+      <h2>Congratulations! You've completed the quiz!</h2>
+      <button type="button" id="returnHome">Start new quiz</button>
+    </div>
+  </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
