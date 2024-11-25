@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(0deg, #0c101c, #242f4e);
 }
 
 h1 {
@@ -102,6 +103,11 @@ button:focus-visible {
   border-radius: 4px;
   padding: 20px;
   width: 100%;
+  box-shadow: 0 0 1px #00000013, 0 1px 2px #00000013, 1px 2px 4px #00000013,
+    1px 3px 8px #00000013, 2px 4px 16px #00000013;
+  border-radius: 15px;
+  background: white;
+  /* linear-gradient(0deg, rgb(255, 116, 38), #242f4e); */
 }
 .answerBox label {
   cursor: pointer;
@@ -258,4 +264,8 @@ button:focus-visible {
 
 .wrongAnswer {
   background-color: red;
+}
+
+input[type="checkbox"] {
+  display: none;
 }

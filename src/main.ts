@@ -108,7 +108,8 @@ const startGame = async (id: number) => {
     const response: Response = await fetch(gameList[id]);
     console.log(response);
     questionList = await response.json();
-    questionList = questionList.slice(0, 2);
+    questionList = questionList
+    // .slice(0, 2);
     console.log(questionList);
 
     displayQuestion()
