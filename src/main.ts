@@ -13,7 +13,7 @@ const mixedEnglishBtn = document.querySelector('#mixedEnglishBtn') as HTMLButton
 
 //quiz view
 const quiz = document.querySelector('#quiz') as HTMLDivElement;
-const progressCounter = document.querySelector('#progressCounter') as HTMLParagraphElement;
+const progressCounter = document.querySelector('#progressCounter') as HTMLDivElement;
 const question = document.querySelector('#question') as HTMLHeadElement;
 const radios = document.getElementsByName('choice') as NodeListOf<HTMLInputElement>;
 const labels = document.querySelectorAll('label') as NodeListOf<HTMLLabelElement>;
@@ -90,7 +90,7 @@ const displayQuestion = () => {
   })
 
   const q = questionList[quizPosition];
-  progressCounter.textContent = `${quizPosition + 1}/${questionList.length}`;
+  progressCounter.innerHTML = `<h3><b>Question${quizPosition + 1}/</b></h3>${questionList.length}`;
   question.textContent = q.question;
   answerTextA.textContent = q.answers[0];
   answerTextB.textContent = q.answers[1];
