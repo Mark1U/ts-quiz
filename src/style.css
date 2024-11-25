@@ -32,9 +32,10 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 4.2em;
   line-height: 1.1;
-  color: orange;
+  color:rgb(247, 220, 169);
+  text-shadow: 0 2px 4px orange;
 }
 
 #app {
@@ -115,6 +116,7 @@ button:focus-visible {
   border-radius: 15px;
   /* background: white; */
   /* linear-gradient(0deg, rgb(255, 116, 38), #242f4e); */
+  margin-bottom: 5%;
 }
 .answerBox label {
   cursor: pointer;
@@ -128,6 +130,9 @@ button:focus-visible {
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
+  /* hinzugefügt */
+  background-color: lightgoldenrodyellow;
+  box-shadow: 1px 3px 3px;
 }
 
 .selectionBox {
@@ -146,7 +151,7 @@ button:focus-visible {
   background-image: none;
   border-style: none;
   box-sizing: border-box;
-  color: #fff;
+  color: rgb(247, 220, 169);
   cursor: pointer;
   display: inline-block;
   flex-direction: row;
@@ -318,6 +323,7 @@ button:focus-visible {
 }
 
 .correctAnswer {
+  
   box-shadow: 0px 0px 20px #00ffc3;
   background: repeating-linear-gradient(
     45deg,
@@ -337,11 +343,24 @@ button:focus-visible {
     #00000000 10px,
     #00000000 20px
   );
+
 }
 
 input[type="checkbox"] {
   display: none;
 }
+
+
+/* for visible seperation of button text */
+span{
+  font-style: italic;}
+
+h2{
+  font-size: 2.2rem;
+  color:rgb(247, 220, 169);
+  
+  /* text-shadow: 0 2px 4px orange; */
+}  
 
 .container {
   margin: 100px auto;
@@ -386,3 +405,4 @@ input[type="checkbox"] {
     /* background-color: #ef476f; */
   }
 }
+
