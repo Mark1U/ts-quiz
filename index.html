@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Quiz </title>
-</head>
+</head>>
 
 <body>
   <div id="app">
@@ -30,7 +30,7 @@
       </div>
       <!-- </div> -->
 
-      <p id="progressCounter"></p>
+      <div id="progressCounter"></div>
       <h2 id="question"></h2>
       <form>
         <div class="answerBox">
@@ -54,11 +54,39 @@
 
         </div>
       </form>
-      <button type="button" class="submit-btn" id="submitAnswer">Submit</button>
+
+      
+
+      <div class="answerBtnContainer">
+        <button id="submitAnswer" class="button" type="button">Validate</button>
+      </div>
     </div>
     <div class="hidden" id="leaderBoard">
       <h3 id="points"></h3>
       <h2 class="congrats">Congratulations! 🎉 You've completed the quiz!</h2>
+
+      <!-- <div class="table">
+        <div>Name</div>
+        <div>Points</div>
+        <div>Time</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+        <div>...</div>
+      </div> -->
+
+
       <button type="button" id="returnHome">Start new quiz</button>
     </div>
   </div>
