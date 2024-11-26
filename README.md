@@ -18,7 +18,9 @@ Welcome to The Quiz, a TypeScript quiz application designed to test your knowled
 
 ## Preview
 
+![screenshot](./public/screenshot_home.png)
 ![screenshot](./public/screenshot.png)
+![screenshot](./public/screenshot_congrats.png)
 
 ## Navigation
 
