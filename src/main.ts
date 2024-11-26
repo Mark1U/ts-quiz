@@ -93,7 +93,7 @@ const displayQuestion = () => {
 
   const q = questionList[quizPosition];
   progressCounter.innerHTML = `<div class='bold'>Question ${quizPosition + 1}/</div>${questionList.length}`;
-  progressBar.style.width = Math.floor((quizPosition + 1) / questionList.length * 100) + '%';
+  progressBar.style.width = Math.floor((quizPosition) / questionList.length * 100) + '%';
   question.textContent = q.question;
   answerTextA.textContent = q.answers[0];
   answerTextB.textContent = q.answers[1];
