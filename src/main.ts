@@ -1,6 +1,6 @@
 import './style.css'
 import IQuestion from './interfaces/IQuestion';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 //home view language choice
 const home = document.querySelector('#home') as HTMLDivElement;
@@ -33,7 +33,7 @@ const leaderBoard = document.querySelector('#leaderBoard') as HTMLDivElement;
 const points = document.querySelector('#points') as HTMLHeadElement;
 const returnHome = document.querySelector('#returnHome') as HTMLButtonElement;
 const progressBar = document.querySelector('.progress-bar2') as HTMLDivElement;
-const table = document.querySelector('.table') as HTMLDivElement;
+// const table = document.querySelector('.table') as HTMLDivElement;
 
 const gameList = [
   'https://vz-wd-24-01.github.io/typescript-quiz/questions/leicht.json',
