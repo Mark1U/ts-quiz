@@ -359,31 +359,58 @@ span {
   font-style: italic;
 }
 
+.bold {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#answerTextA,
+#answerTextB,
+#answerTextC,
+#answerTextD {
+  color: white;
+  font-size: 18px;
+}
 h2 {
   font-size: 1.8rem;
   color: rgb(247, 220, 169);
-
-.congrats{
-  text-shadow: 0 2px 4px orange;
-  font-size: 2.2rem;
-  color:rgb(247, 220, 169);
 }
 
-#points{
+.congrats {
+  text-shadow: 0 2px 4px orange;
+  font-size: 2.2rem;
+  color: rgb(247, 220, 169);
+}
+
+#points {
   font-size: 1.6rem;
   font-weight: 800;
 }
-h3{
-  color:rgb(247, 220, 169);
+h3 {
+  color: rgb(247, 220, 169);
 }
-/* submit answer btn */ 
-.submit-btn{
+/* submit answer btn */
+.submit-btn {
   color: rgb(247, 220, 169);
   padding: 15px 25px;
   /* background-color: #38D2D2; */
   background-color: #2cb9b9;
-  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  background-image: radial-gradient(
+      93% 87% at 87% 89%,
+      rgba(0, 0, 0, 0.23) 0%,
+      transparent 86.18%
+    ),
+    radial-gradient(
+      66% 66% at 26% 20%,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+    inset 0px 3px 9px rgba(255, 255, 255, 0.3),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.6),
+    inset 0px -8px 36px rgba(0, 0, 0, 0.3),
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
   border-radius: 14px;
   font-weight: bold;
   font-size: 16px;
@@ -396,7 +423,7 @@ h3{
 
 /* return home  - new quiz btn */
 
-#returnHome{
+#returnHome {
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -418,12 +445,11 @@ h3{
     #ff0000,
     #ff7300,
     #fffb00,
-   /*  #48ff00,
+    /*  #48ff00,
     #00ffd5,
     #002bff,
     #7a00ff,
-    #ff00c8, */
-    #ff0000
+    #ff00c8, */ #ff0000
   );
   position: absolute;
   top: -2px;
